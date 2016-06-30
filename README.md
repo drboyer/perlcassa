@@ -6,13 +6,16 @@ perlcassa - Perl Client for Apache Cassandra
 
 v0.060
 
-## INSTALLATION
+# INSTALLATION
 perlcassa can be installed by doing the usual:
 ```bash
     $ perl Makefile.PL
     $ make
     $ make install
 ```
+
+## REQUIRES
+Perl5.10, Class::Accessor, Thrift::XS, Time::HiRes, UUID::Tiny, Socket6
 
 # SYNOPSIS
 
@@ -80,11 +83,6 @@ perlcassa can be installed by doing the usual:
     print "Row key, col01: ".$row->{key}.", ".$row->{col01}."\n";
 
 ```
-
-
-# REQUIRES
-
-Perl5.10, Thrift::XS, Time::HiRes, UUID::Tiny, Socket6
 
 # DESCRIPTION
 
